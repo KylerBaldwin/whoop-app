@@ -19,9 +19,9 @@ whoop = Whoop(client_id=getenv('CLIENT_ID'),
 @login_required
 def whoop_auth():
     # Get the user_id from the query parameter
-    user_id = request.args.get('user_id')
+    user_id = request.args.get('userid')
     if not user_id:
-        return "Missing user_id", 400
+        return "Missing userid", 400
 
     # Generate a secure state parameter
     state = secrets.token_urlsafe(16)
