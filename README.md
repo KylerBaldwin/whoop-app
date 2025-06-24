@@ -15,6 +15,8 @@ pip install -r requirements.txt
 
 DATABASE_URI = SQLAlchemy URI to your Database
 SECRET_KEY = Your secret key for the flask app
+CLIENT_ID = OAuth2 client ID for Whoop API integration
+CLIENT_SECRET = OAuth2 client secret for Whoop API integration
 
 ## Running The App
 
